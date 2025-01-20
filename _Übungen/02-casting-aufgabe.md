@@ -20,7 +20,7 @@
 4. Beobachte und erkläre, was mit den Daten passiert.
 
 ## Übung 4: Fehler beim Casting
-1. Erstelle eine `double`-Variable mit einem sehr großen Wert, z. B. `1.0E20`.
+1. Erstelle eine `double`-Variable mit einem sehr großen Wert, z. B. `2.0E20`.
 2. Konvertiere diese Variable explizit in einen `int`.
 3. Beobachte, was passiert, und versuche zu erklären, warum dies geschieht.
 
