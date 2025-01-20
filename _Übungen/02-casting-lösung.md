@@ -1,7 +1,7 @@
 # Lösungen: Casting in Java
 
-Die Lösungen sind in ausführlicherer Form auch im Verzeichnis `Casting` zu finden.
-
+> [!NOTE] 
+> Die Lösungen sind in ausführlicherer Form auch im Verzeichnis [`Casting`](../Casting/src) zu finden.
 
 ## Lösung 1: Implizites Casting
 ```java
