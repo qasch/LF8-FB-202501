@@ -1,5 +1,8 @@
 # Lösungen: Casting in Java
 
+Die Lösungen sind in ausführlicherer Form auch im Verzeichnis `Casting` zu finden.
+
+
 ## Lösung 1: Implizites Casting
 ```java
 public class Main {
@@ -11,9 +14,8 @@ public class Main {
     }
 }
 ```
-
 ## Lösung 2: Explizites Casting
-```
+```java
 public class Main {
     public static void main(String[] args) {
         double myDouble = 15.75;
@@ -23,8 +25,9 @@ public class Main {
     }
 }
 ```
+
 ## Lösung 3: Datentypen-Kette
-```
+```java
 public class Main {
     public static void main(String[] args) {
         byte myByte = 100;
@@ -38,9 +41,10 @@ public class Main {
         System.out.println("double-Wert: " + myDouble);
     }
 }
+```
 
 ## Lösung 4: Narrowing Casting mit Verlust
-```
+```java
 public class Main {
     public static void main(String[] args) {
         float myFloat = 12345.6789f;
@@ -53,8 +57,9 @@ public class Main {
     }
 }
 ```
+
 ## Lösung 5: Fehler beim Casting
-```
+```java
 public class Main {
     public static void main(String[] args) {
         double myDouble = 1.0E20;
@@ -64,8 +69,9 @@ public class Main {
     }
 }
 ```
+
 ## Lösung 6: Wertebereich testen
-```
+```java
 public class Main {
     public static void main(String[] args) {
         long myLong = 2147483648L; // Außerhalb des int-Bereichs
@@ -77,7 +83,7 @@ public class Main {
 ```
  
 ## Lösung 7: Fehlerhafte Konvertierung
-```
+```java
 public class Main {
     public static void main(String[] args) {
         String myString = "123abc"; // Nicht konvertierbarer String
