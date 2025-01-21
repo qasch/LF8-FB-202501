@@ -45,6 +45,7 @@ Schreibe ein Programm, das Benutzername und Passwort prüft. Nur wenn beide korr
 
 > [!NOTE] 
 > - Lege die korrekten Werte für Benutzername und Passwort direkt im Code fest.
+> - Wenn du versuchst, Strings mit `==` zu vergleichen, wirst du nicht erfolgreich sein. Für den Vergleich von Strings nutzen wir die Methode `.equals()` der Klasse `String`. Recherchiere, warum das so ist.
 > - Teste das Programm mit verschiedenen Eingaben.
 
 ## Aufgabe 6: Schaltjahr prüfen
