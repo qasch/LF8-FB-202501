@@ -44,7 +44,6 @@ Schreibe ein Programm, das eine Schulnote (1–6) einliest und den passenden Kom
 Schreibe ein Programm, das Benutzername und Passwort prüft. Nur wenn beide korrekt sind, soll "Login erfolgreich" ausgegeben werden. Andernfalls "Login fehlgeschlagen".
 
 > [!NOTE] 
-> ### Hinweis:
 > - Lege die korrekten Werte für Benutzername und Passwort direkt im Code fest.
 > - Teste das Programm mit verschiedenen Eingaben.
 
