@@ -86,7 +86,7 @@ Eine Multiplikationstabelle zeigt die Ergebnisse der Multiplikation zweier Zahle
 - Schreibe ein Programm, das die Multiplikationstabelle von 1 bis 10 auf der Konsole ausgibt.  
 
 > [!IMPORTANT]  
-- **Zusatz:** Lass den Benutzer entscheiden, für welche Zahl die Tabelle ausgegeben werden soll.  
+> - **Zusatz:** Lass den Benutzer entscheiden, für welche Zahl die Tabelle ausgegeben werden soll.  
 
 ## **10. Einfache Sternmuster**
 **Ziel:** Arbeiten mit verschachtelten Schleifen.  
@@ -99,5 +99,5 @@ Eine Multiplikationstabelle zeigt die Ergebnisse der Multiplikation zweier Zahle
 *****
 ```
 > [!IMPORTANT]  
-- **Zusatz:** Lass den Benutzer die Anzahl der Zeilen eingeben.  
-- Gib das Muster umgekehrt aus (z. B. 5 Sterne in der ersten Zeile, 4 in der zweiten usw.).  
+> - **Zusatz:** Lass den Benutzer die Anzahl der Zeilen eingeben.  
+> - Gib das Muster umgekehrt aus (z. B. 5 Sterne in der ersten Zeile, 4 in der zweiten usw.).  
