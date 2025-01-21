@@ -5,28 +5,28 @@
 - Schreibe ein Programm, das die Zahlen von `1` bis `10` auf der Konsole ausgibt.  
 - Nutze dafür einmal eine `while` und dann auch eine `for`-Schleife.  
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > **Zusatz:** Gib die Zahlen untereinander oder nebeneinander mit einem Komma getrennt aus.  
 
 ## **2. Summieren von Zahlen**
 - Schreibe ein Programm, das die Summe der Zahlen von `1` bis `100` berechnet.  
 - Gib die Summe aus.  
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > **Zusatz:** Modifiziere das Programm, sodass der Benutzer eine Obergrenze (z. B. `200`) eingeben kann.  
 
 ## **3. Gerade Zahlen ausgeben**
 - Gib alle *geraden* Zahlen zwischen `1` und `50` aus.  
 - Nutze eine `for`-Schleife und eine `if`-Bedingung.  
 
-> [!IMPORTANT]
+> [!NOTE]
 > **Zusatz:** Lass den Benutzer eine Start- und Endzahl eingeben.  
 
 ## **4. Benutzer-Eingaben summieren**
 - Schreibe ein Programm, das Zahlen vom Benutzer einliest und die Summe berechnet.  
 - Die Eingabe wird beendet, wenn der Benutzer `0` eingibt.  
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > **Zusatz:** Prüfe, ob die Eingabe eine gültige Zahl ist (z. B. keine Buchstaben).  
 
 ## **5. Zahlenraten-Spiel**
@@ -34,7 +34,7 @@
 - Der Benutzer muss die Zahl erraten. Das Programm gibt Hinweise wie "zu hoch" oder "zu niedrig".  
 - Beende die Schleife, wenn der Benutzer die Zahl erraten hat.  
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > **Zusatz:** Zeige am Ende an, wie viele Versuche der Benutzer gebraucht hat.  
 
 ## **6. Umgekehrte Zeichenfolge**
@@ -46,7 +46,7 @@
 > 2. Iteriere von der letzten Position der Zeichenkette bis zur ersten.  
 > 3. Füge die Zeichen in umgekehrter Reihenfolge in eine neue Zeichenkette ein.  
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > **Zusatz:** Prüfe, ob die umgekehrte Zeichenfolge ein Palindrom ist.  
 
 
@@ -85,7 +85,7 @@ Eine Multiplikationstabelle zeigt die Ergebnisse der Multiplikation zweier Zahle
 ### Aufgabe
 - Schreibe ein Programm, das die Multiplikationstabelle von 1 bis 10 auf der Konsole ausgibt.  
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > - **Zusatz:** Lass den Benutzer entscheiden, für welche Zahl die Tabelle ausgegeben werden soll.  
 
 ## **10. Einfache Sternmuster**
@@ -98,6 +98,6 @@ Eine Multiplikationstabelle zeigt die Ergebnisse der Multiplikation zweier Zahle
 ****
 *****
 ```
-> [!IMPORTANT]  
+> [!NOTE]  
 > - **Zusatz:** Lass den Benutzer die Anzahl der Zeilen eingeben.  
 > - Gib das Muster umgekehrt aus (z. B. 5 Sterne in der ersten Zeile, 4 in der zweiten usw.).  
