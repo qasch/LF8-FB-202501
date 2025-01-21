@@ -18,6 +18,8 @@ public class VerzweigungScanner {
         System.out.print("Bitte eine Zahl b eingeben: ");
         b = scanner.nextInt();
 
+        scanner.close();  // Scanner schliessen um Ressourcen freizugeben (Best Practice)
+
         if(a > b) {  // true
             System.out.println("a (" + a + ") ist grösser als b (" + b + ").");
         } else if (a < b) {   // wird gar nicht mehr geprüft, da obiges if schon true
