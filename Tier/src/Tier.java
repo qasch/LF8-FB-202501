@@ -1,7 +1,10 @@
-public class Tier {
+public abstract class Tier {
+    // eine abstrakte Klasse ist eine Vorlage/Bauplan für weitere erbende Klassen
+    // aus einer abstrakten Klasse können keine Instanzen erzeugt werden
     String name;
     int alter;
     int anzahlBeine;
+    String art;
 
     public Tier() {
         this.alter = 1;
@@ -17,7 +20,8 @@ public class Tier {
         System.out.println(this.name + " bewegt sich.");
     }
 
-    void geraeuschMachen() {
-        System.out.println(this.name + " macht ein Geräusch.");
-    }
+    // abstrakte Methode:
+    // enthält keinen Methodenrumpf/Funktionalität
+    // *muss* in erbenden Klassen überschrieben werden
+    abstract void geraeuschMachen();
 }

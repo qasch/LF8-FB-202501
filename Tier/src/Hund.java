@@ -8,6 +8,7 @@ public class Hund extends Tier {
 
     public Hund(String name, int alter, int anzahlBeine) {
         super(name, alter, anzahlBeine);
+        this.art = "Hund";
     }
 
     @Override

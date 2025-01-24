@@ -6,6 +6,7 @@ public class Main {
         System.out.println(gretl.alter);
         System.out.println(gretl.anzahlBeine);
 
+        System.out.println(gretl.name + " ist ein " + gretl.art);
         gretl.bewegen();
         gretl.ganzSchoenDollRiechen();
         gretl.mitDemSchwanzWedeln();
@@ -17,6 +18,7 @@ public class Main {
         System.out.println(pablo.alter);
         System.out.println(pablo.anzahlBeine);
 
+        System.out.println(pablo.name + " ist ein " + pablo.art);
         pablo.bewegen();
         pablo.macheGarNix();
         pablo.istEinfachSuperToll();

@@ -5,6 +5,12 @@ public class Schildkroete extends Tier {
     public Schildkroete(String name, int alter, int anzahlBeine){
         // mit super() rufen wir den Konstruktor der Elternklasse auf
         super(name, alter, anzahlBeine);
+        this.art = "Schildkröte";
+    }
+
+    @Override
+    void geraeuschMachen(){
+        System.out.println(this.name + " macht eh");
     }
 
     void istEinfachSuperToll(){
