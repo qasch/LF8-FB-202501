@@ -3,6 +3,10 @@ public class Tier {
     int alter;
     int anzahlBeine;
 
+    public Tier() {
+        this.alter = 1;
+    }
+
     public Tier(String name, int alter, int anzahlBeine) {
         this.name = name;
         this.alter = alter;
@@ -13,7 +17,7 @@ public class Tier {
         System.out.println(this.name + " bewegt sich.");
     }
 
-    void geraeuschMachen(String geraeusch) {
-        System.out.println(geraeusch);
+    void geraeuschMachen() {
+        System.out.println(this.name + " macht ein Geräusch.");
     }
 }
