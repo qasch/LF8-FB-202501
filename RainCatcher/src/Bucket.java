@@ -14,8 +14,8 @@ public class Bucket {
     }
 
     public void show() {
-        p.rect(posX, posY, width, height);  // Bucket ist ein Rechteck
         p.fill(200, 100, 0);   // Farbe des Buckets
+        p.rect(posX, posY, width, height);  // Bucket ist ein Rechteck
     }
 
     public void move(int direction) {

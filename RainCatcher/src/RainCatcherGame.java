@@ -2,9 +2,18 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 
+// - [ ] TODO: Verteilung Drops
+// - [ ] TODO: Speed Bucket
+// - [ ] TODO: Beschleunigungsfaktor Bucket
+// - [ ] TODO:
+// - [ ] TODO:
+// - [ ] TODO:
+
+
 public class RainCatcherGame extends PApplet {
     Bucket bucket;
     ArrayList<Raindrop> raindrops;
+    int speed = 5;
 
     public static void main(String[] args) {
         PApplet.main("RainCatcherGame");
@@ -12,7 +21,7 @@ public class RainCatcherGame extends PApplet {
 
     // hier legen wir grundlegende Sachen fest:
     public void settings() {
-        size(800, 800);
+        size(600, 600);
     }
     // Breit/Höhe Canvas, Hintergrund etc.
     public void setup() {
@@ -23,19 +32,22 @@ public class RainCatcherGame extends PApplet {
     // ist ein Loop - wird immer wieder ausgeführt
     public void draw() {
         background(150, 0, 150);
-        // Position bucket anzeigen
-        fill(0, 0, 0);
-        textSize(20);
-        text("PosX: " + bucket.posX, 400, 400);
+
+        // Reset speed wenn gerade keine Taste gedrückt wird
+        // speed ist die Geschwindigkeit des Buckets
+        if(!keyPressed) speed = 5;
+
+        fill(0,0,0);
+        textSize(15);
+        text("speed: " + speed, 400,400);
 
         bucket.show();
 
-        if (frameCount % 90 == 0) {  // TODO: finetuning
+        if (frameCount % 120 == 0) {  // TODO: finetuning
             // neuen Raindrop der ArrayList hinzufügen
             raindrops.add(new Raindrop(this));
         }
 
-//        for(int i = raindrops.size() - 1; i >= 0; i--) {
         for(int i = 0; i < raindrops.size(); i++) {
             Raindrop drop = raindrops.get(i);
             drop.show();
@@ -53,10 +65,13 @@ public class RainCatcherGame extends PApplet {
     // Steuerung des Buckets
     public void keyPressed(){
         if(key == 'd') {
-            bucket.move(5);
+            bucket.move(speed);
+            // Speed erhöhen, je länger wir die Taste drückten
+            speed++;
         }
-        if(key == 'a') {
-           bucket.move(-5);
+        else if(key == 'a') {
+            bucket.move(-speed);
+            speed++;
         }
     }
 

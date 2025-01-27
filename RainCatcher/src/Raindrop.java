@@ -25,7 +25,7 @@ public class Raindrop {
     }
 
     public boolean isCaughtByBucket(Bucket bucket) {
-        return this.posY > p.height - bucket.height && // - bucket.posY; //- p.height/2 &&
+        return this.posY + size/2 > p.height - bucket.height && // - bucket.posY; //- p.height/2 &&
                 posX > bucket.posX &&
                 posX < bucket.posX + bucket.width;
     }
