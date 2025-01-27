@@ -9,13 +9,13 @@ public class Bucket {
         this.p = p;
         width = 100;
         height = 30;
-        posX = p.width / 2 - width / 2; // TODO: Try to get canvasWidth instead of hardcoding width and height
+        posX = p.width / 2 - width / 2;
         posY = p.height - height;
     }
 
     public void show() {
-        p.rect(posX, posY, width, height);
-        p.fill(200, 100, 0);
+        p.rect(posX, posY, width, height);  // Bucket ist ein Rechteck
+        p.fill(200, 100, 0);   // Farbe des Buckets
     }
 
     public void move(int direction) {

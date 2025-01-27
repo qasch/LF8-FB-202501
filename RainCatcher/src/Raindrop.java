@@ -12,7 +12,7 @@ public class Raindrop {
         posX = p.random(p.width);
         posY = 0;
         size = p.random(10, 20);
-        speed = p.random(1, 3);  // TODO: random?
+        speed = p.random(1, 3);
     }
 
     public void show() {
@@ -25,8 +25,9 @@ public class Raindrop {
     }
 
     public boolean isCaughtByBucket(Bucket bucket) {
-        return posY > p.height - bucket.posY - p.height/2 &&
-                posX > bucket.posX && posX < bucket.width + bucket.posX;
+        return this.posY > p.height - bucket.height && // - bucket.posY; //- p.height/2 &&
+                posX > bucket.posX &&
+                posX < bucket.posX + bucket.width;
     }
 
 }

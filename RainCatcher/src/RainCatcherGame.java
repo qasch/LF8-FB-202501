@@ -30,22 +30,27 @@ public class RainCatcherGame extends PApplet {
 
         bucket.show();
 
-        if (frameCount % 60 == 0) {  // TODO: finetuning
+        if (frameCount % 90 == 0) {  // TODO: finetuning
             // neuen Raindrop der ArrayList hinzufügen
             raindrops.add(new Raindrop(this));
         }
 
-        for(Raindrop drop : raindrops) {
+//        for(int i = raindrops.size() - 1; i >= 0; i--) {
+        for(int i = 0; i < raindrops.size(); i++) {
+            Raindrop drop = raindrops.get(i);
             drop.show();
             drop.fall();
             if(drop.isCaughtByBucket(bucket)){
                 System.out.println("Gefangen!");
-                background(0, 0, 0);
+                raindrops.remove(i);
+            } else if (drop.posY > height) {
+                raindrops.remove(i);
             }
         }
 
     }
 
+    // Steuerung des Buckets
     public void keyPressed(){
         if(key == 'd') {
             bucket.move(5);
