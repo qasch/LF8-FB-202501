@@ -3,10 +3,8 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 
 // - [ ] TODO: Verteilung Drops
-// - [ ] TODO: Speed Bucket
-// - [ ] TODO: Beschleunigungsfaktor Bucket
-// - [ ] TODO:
-// - [ ] TODO:
+// - [x] TODO: Speed Bucket
+// - [x] TODO: Beschleunigungsfaktor Bucket
 // - [ ] TODO:
 
 
@@ -14,6 +12,8 @@ public class RainCatcherGame extends PApplet {
     Bucket bucket;
     ArrayList<Raindrop> raindrops;
     int speed = 5;
+    int score = 0;
+    int lives = 0;
 
     public static void main(String[] args) {
         PApplet.main("RainCatcherGame");
@@ -38,8 +38,12 @@ public class RainCatcherGame extends PApplet {
         if(!keyPressed) speed = 5;
 
         fill(0,0,0);
-        textSize(15);
-        text("speed: " + speed, 400,400);
+        textSize(25);
+        text("Score: " + score, 500,30);
+
+        fill(0,0,0);
+        textSize(25);
+        text("Lives: " + lives, 500,60);
 
         bucket.show();
 
@@ -53,11 +57,25 @@ public class RainCatcherGame extends PApplet {
             drop.show();
             drop.fall();
             if(drop.isCaughtByBucket(bucket)){
-                System.out.println("Gefangen!");
+                score++;
                 raindrops.remove(i);
             } else if (drop.posY > height) {
                 raindrops.remove(i);
+                lives--;
             }
+        }
+
+        if (lives <= 0) {
+            fill(255,0, 0); // red
+            rect(0, 0, width, height);
+            fill(0, 0, 0);
+            textSize(50);
+            text("GAME OVER", width/2 - 120, height/2 - 30);
+            textSize(30);
+            text("Press 'R' to restart the game", width/2 - 170, height/2 + 30);
+            textSize(20);
+            text("Score: " + score, width/2 - 30, height/2 + 70);
+            noLoop();
         }
 
     }
@@ -69,9 +87,14 @@ public class RainCatcherGame extends PApplet {
             // Speed erhöhen, je länger wir die Taste drückten
             speed++;
         }
-        else if(key == 'a') {
+        if(key == 'a') {
             bucket.move(-speed);
             speed++;
+        }
+        if(key == 'r') {
+            lives = 5;
+            raindrops.clear();
+            loop();
         }
     }
 
