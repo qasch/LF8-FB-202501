@@ -1,9 +1,5 @@
-# import Computer
-
-# c = Computer.Computer("ThinkPad", 98723984, 24, 32, 200)
-# c.sayHello()
-
-from Computer import Computer, Laptop
+from computer import Computer
+from laptop import Laptop
 
 if __name__ == "__main__":
 
@@ -29,7 +25,9 @@ if __name__ == "__main__":
     print("-----------")
     print()
 
-    l = Laptop("ThinkPad",123123123, 12, 24, 500, 16, 10)
+    # Wir initialisiern battery_level bewusst nicht und wollen,
+    # dass der default 0 übernommen wird
+    l = Laptop("ThinkPad",123123123, 12, 24, 500, 16)
     l.sayHello()
     l.is_on = True
     l.sayHello()
